@@ -1,0 +1,17 @@
+color "governments: Xyzplanxx" .4 .4 .4
+
+government "XYZ"
+	color "governments: Xyzplanxx"
+	"bribe" 0.1
+	"fine" 0
+
+	"player reputation" 1000000000
+	"default attitude" 1000000000
+
+	"penalty for"
+		assist -10
+		disable -10
+		board -10
+		capture -10
+		destroy -10
+		atrocity -10

@@ -1,0 +1,9 @@
+system XYZ-1
+	pos 2500 100
+	government XYZ
+	habitable 500
+	"jump range" 100000000
+	object XYZhome
+		sprite planet/xyzPlanet
+		distance 658.54
+		period 390.801

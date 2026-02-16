@@ -1,0 +1,879 @@
+category "outfit"
+	"xyz Crew/Automaton stuff"
+	"xyz Ship Invincible parts"
+	"xyz Ship unli fuel"
+	"xyz Ship Engine parts"
+	"xyz Ship Gun/Turret stuff"
+	"xyz Scanning stuff"
+	"xyz planet/wormhole access"
+	"xyz crews' weapon"
+	"xyz bunker/cargo capacity"
+	"xyz weight stuff"
+	"xyz unli outfitter space"
+	"xyz invisible stuff"
+	"xyz Hyperdrive/Jumpdrive stuff"
+	"xyz map"
+	"xyz income generator"
+
+outfit "crew minus"
+	"display name" "required crew -1"
+	category "xyz Crew/Automaton stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"required crew" -1
+
+outfit "crew pluss"
+	"display name" "required crew 1"
+	category "xyz Crew/Automaton stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"required crew" 1
+
+outfit "1xyzplanautomaton"
+	"display name" "automaton"
+	category "xyz Crew/Automaton stuff"
+	thumbnail "outfit/aautomatonxyz"
+	"unplunderable" 1
+	"automaton" 1
+
+outfit "0xyzplanautomaton"
+	"display name" "no automaton"
+	category "xyz Crew/Automaton stuff"
+	thumbnail "outfit/aautomatonxyz"
+	"unplunderable" 1
+	"automaton" -1
+
+outfit "xyzImmortalz"
+	"display name" "immortal core"
+	category "xyz Ship Invincible parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"corrosion resistance" 1000000000000000
+	"disruption protection" 1000000000000000
+	"disruption resistance" 1000000000000000
+	"heat protection" 1000000000000000
+	hull 1000000000000000
+	"hull heat" -1000000000000000
+	"hull energy" 1000000000000000
+	"hull protection" 1000000000000000
+	"ion protection" 1000000000000000
+	"ion resistance" 1000000000000000
+	"piercing protection" 1000000000000000
+	"piercing resistance" 1000000000000000
+	"scramble protection" 1000000000000000
+	"scramble resistance" 1000000000000000
+	"shield energy" 1000000000000000
+	shields 1000000000000000
+	"shield heat" -1000000000000000
+	"shield heat multiplier" -1000000000000000
+	"hull heat multiplier" -1000000000000000
+	"slowing protection" 1000000000000000
+	"slowing resistance" 1000000000000000
+	"force protection" 1000000000000000
+
+outfit "xyzRegenerationGod"
+	"display name" "healer core"
+	category "xyz Ship Invincible parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"hull repair rate" 1000000000000000
+	"shield generation" 1000000000000000
+	"shield generation multiplier" 1000000000000000
+	"shield energy multiplier" 1000000000000000
+
+outfit "xyzfuelcollectorGod"
+	"display name" "ramscoop core"
+	category "xyz Ship unli fuel"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	ramscoop 1000000000000000
+
+outfit "xyzPowerGod"
+	"display name" "power core"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"energy capacity" 1000000000000000
+	"energy generation" 1000000000000000
+	"energy protection" 1000000000000000
+	"engine capacity" 1000000000000000
+	"cooling" 10000000000000000000000000000000
+	"heat capacity" 10000000000000000000000000000000
+	"overheat damage threshold" 10000000000000000000000000000000
+
+outfit "xyzKillWeaponGun"
+	"display name" "SlayeR Gun"
+	category "xyz Ship Gun/Turret stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"gun ports" -1
+	weapon
+		"hardpoint sprite" "hardpoint/xyzGT"
+		"hardpoint offset" 10.
+		sound "xyzBulletZ"
+		"turret turn" 0
+		"velocity" 28
+		"lifetime" 1
+		"reload" 1
+		"burst reload" 1
+		"burst count" 5
+		"submunition" "xyzKillWeaponAmmo"
+
+outfit "xyzKillWeaponAmmo"
+	weapon
+		sprite "projectile/xyzBullet"
+			"frame rate" 7
+			"random start frame"
+		"lifetime" 100
+		"hit force" 10
+		"piercing" 2000
+		"shield damage" 1000000000000000
+		"relative shield damage" 1000000000000000
+		"hull damage" 1000000000000000
+		"relative hull damage" 1000000000000000
+		"heat damage" 1000000000000000
+		"slowing damage" 1000000000000000
+		safe
+		phasing
+
+outfit "xyzDisableWeaponGun"
+	"display name" "DisableR Gun"
+	category "xyz Ship Gun/Turret stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"gun ports" -1
+	weapon
+		"hardpoint sprite" "hardpoint/xyzGT"
+		"hardpoint offset" 10.
+		sound "xyzBulletZ"
+		"turret turn" 0
+		"velocity" 28
+		"lifetime" 1
+		"reload" 1
+		"burst reload" 1
+		"burst count" 5
+		"submunition" "xyzDisableWeaponAmmo"
+
+outfit "xyzDisableWeaponAmmo"
+	weapon
+		sprite "projectile/xyzBullet"
+			"frame rate" 7
+			"random start frame"
+		"lifetime" 100
+		"hit force" 10
+		"piercing" 2000
+		"hull damage" 1000000000000000
+		"relative hull damage" 1
+		"slowing damage" 100000
+		"disabled damage" 0
+		"relative disabled damage" 0
+		safe
+		phasing
+
+outfit "xyzMassGod"
+	"display name" "mass 10000 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" 10000
+
+outfit "xyzMassGodd"
+	"display name" "mass 1 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" 1
+
+outfit "xyzMassGoddd"
+	"display name" "mass 0.1 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" 0.1
+
+outfit "xyzMassGodddd"
+	"display name" "mass 0.01 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" 0.01
+
+outfit "xyzMassGoddddd"
+	"display name" "mass 0.001 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" 0.001
+
+outfit "xyzMassGodddddd"
+	"display name" "mass 0.0001 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" 0.0001
+
+outfit "xyzMassGoddddddd"
+	"display name" "mass 0.00001 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" 0.00001
+
+outfit "xyzMassGoddamn"
+	"display name" "mass minus -1 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" -1
+
+outfit "xyzMassGoddamnn"
+	"display name" "mass minus -0.1 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" -0.1
+
+outfit "xyzMassGoddamnnn"
+	"display name" "mass minus -0.01 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" -0.01
+
+outfit "xyzMassGoddamnnnn"
+	"display name" "mass minus -0.001 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" -0.001
+
+outfit "xyzMassGoddamnnnnn"
+	"display name" "mass minus -0.0001 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" -0.0001
+
+outfit "xyzMassGoddamnnnnnn"
+	"display name" "mass minus -0.00001 core"
+	category "xyz weight stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"mass" -0.00001
+
+outfit "xyzEngineGod"
+	"display name" "engine core"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" 80000
+	"thrust" 10500
+	"reverse thrust" 10500
+	"drag" 700
+
+outfit "xyzThrustGod"
+	"display name" "Plus 1 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" 1
+	"reverse thrust" 1
+
+outfit "xyzThrustGoddamn"
+	"display name" "Minus 1 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" -1
+	"reverse thrust" -1
+
+outfit "xyzTurnGod"
+	"display name" "Plus 1 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" 1
+
+outfit "xyzTurnGoddamn"
+	"display name" "Minus 1 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" -1
+
+outfit "xyzDragGod"
+	"display name" "Plus 1 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" 1
+
+outfit "xyzDragGoddamn"
+	"display name" "Minus 1 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" -1
+
+outfit "xyzThrustGodDecimal"
+	"display name" "Plus 0.1 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" 0.1
+	"reverse thrust" 0.1
+
+outfit "xyzThrustGoddamnDecimal"
+	"display name" "Minus 0.1 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" -0.1
+	"reverse thrust" -0.1
+
+outfit "xyzTurnGodDecimal"
+	"display name" "Plus 0.1 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" 0.1
+
+outfit "xyzTurnGoddamnDecimal"
+	"display name" "Minus 0.1 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" -0.1
+
+outfit "xyzDragGodDecimal"
+	"display name" "Plus 0.1 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" 0.1
+
+outfit "xyzDragGoddamnDecimal"
+	"display name" "Minus 0.1 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" -0.1
+
+outfit "xyzThrustGodDecimall"
+	"display name" "Plus 0.01 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" 0.01
+	"reverse thrust" 0.01
+
+outfit "xyzThrustGoddamnDecimall"
+	"display name" "Minus 0.01 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" -0.01
+	"reverse thrust" -0.01
+
+outfit "xyzTurnGodDecimall"
+	"display name" "Plus 0.01 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" 0.01
+
+outfit "xyzTurnGoddamnDecimall"
+	"display name" "Minus 0.01 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" -0.01
+
+outfit "xyzDragGodDecimall"
+	"display name" "Plus 0.01 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" 0.01
+
+outfit "xyzDragGoddamnDecimall"
+	"display name" "Minus 0.01 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" -0.01
+
+outfit "xyzThrustGodDecimalll"
+	"display name" "Plus 0.001 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" 0.001
+	"reverse thrust" 0.001
+
+outfit "xyzThrustGoddamnDecimalll"
+	"display name" "Minus 0.001 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" -0.001
+	"reverse thrust" -0.001
+
+outfit "xyzTurnGodDecimalll"
+	"display name" "Plus 0.001 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" 0.001
+
+outfit "xyzTurnGoddamnDecimalll"
+	"display name" "Minus 0.001 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" -0.001
+
+outfit "xyzDragGodDecimalll"
+	"display name" "Plus 0.001 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" 0.001
+
+outfit "xyzDragGoddamnDecimalll"
+	"display name" "Minus 0.001 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" -0.001
+
+outfit "xyzThrustGodDecimallll"
+	"display name" "Plus 0.0001 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" 0.0001
+	"reverse thrust" 0.0001
+
+outfit "xyzThrustGoddamnDecimallll"
+	"display name" "Minus 0.0001 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" -0.0001
+	"reverse thrust" -0.0001
+
+outfit "xyzTurnGodDecimallll"
+	"display name" "Plus 0.0001 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" 0.0001
+
+outfit "xyzTurnGoddamnDecimallll"
+	"display name" "Minus 0.0001 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" -0.0001
+
+outfit "xyzDragGodDecimallll"
+	"display name" "Plus 0.0001 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" 0.0001
+
+outfit "xyzDragGoddamnDecimallll"
+	"display name" "Minus 0.0001 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" -0.0001
+
+outfit "xyzThrustGodDecimalllll"
+	"display name" "Plus 0.00001 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" 0.00001
+	"reverse thrust" 0.00001
+
+outfit "xyzThrustGoddamnDecimalllll"
+	"display name" "Minus 0.00001 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" -0.00001
+	"reverse thrust" -0.00001
+
+outfit "xyzTurnGodDecimalllll"
+	"display name" "Plus 0.00001 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" 0.00001
+
+outfit "xyzTurnGoddamnDecimalllll"
+	"display name" "Minus 0.00001 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" -0.00001
+
+outfit "xyzDragGodDecimalllll"
+	"display name" "Plus 0.00001 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" 0.00001
+
+outfit "xyzDragGoddamnDecimalllll"
+	"display name" "Minus 0.00001 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" -0.00001
+
+outfit "xyzThrustGodDecimallllll"
+	"display name" "Plus 0.000001 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" 0.000001
+	"reverse thrust" 0.000001
+
+outfit "xyzThrustGoddamnDecimallllll"
+	"display name" "Minus 0.000001 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" -0.000001
+	"reverse thrust" -0.000001
+
+outfit "xyzTurnGodDecimallllll"
+	"display name" "Plus 0.000001 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" 0.000001
+
+outfit "xyzTurnGoddamnDecimallllll"
+	"display name" "Minus 0.000001 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" -0.000001
+
+outfit "xyzDragGodDecimallllll"
+	"display name" "Plus 0.000001 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" 0.000001
+
+outfit "xyzDragGoddamnDecimallllll"
+	"display name" "Minus 0.000001 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" -0.000001
+
+outfit "xyzThrustGodDecimalllllll"
+	"display name" "Plus 0.0000001 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" 0.0000001
+	"reverse thrust" 0.0000001
+
+outfit "xyzThrustGoddamnDecimalllllll"
+	"display name" "Minus 0.0000001 Thrust"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"thrust" -0.0000001
+	"reverse thrust" -0.0000001
+
+outfit "xyzTurnGodDecimalllllll"
+	"display name" "Plus 0.0000001 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" 0.0000001
+
+outfit "xyzTurnGoddamnDecimalllllll"
+	"display name" "Minus 0.0000001 Turn"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turn" -0.0000001
+
+outfit "xyzDragGodDecimalllllll"
+	"display name" "Plus 0.0000001 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" 0.0000001
+
+outfit "xyzDragGoddamnDecimalllllll"
+	"display name" "Minus 0.0000001 Drag"
+	category "xyz Ship Engine parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"drag" -0.0000001
+
+outfit "xyzFuelGod"
+	"display name" "fuel core"
+	category "xyz Ship unli fuel"
+	thumbnail "outfit/xyzfuel"
+	"unplunderable" 1
+	"fuel capacity" 1
+
+outfit "xyzScannerGod"
+	"display name" "scanner core"
+	category "xyz Scanning stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"cargo scan efficiency" 1000000000000000
+	"cargo scan opacity" 1000000000000000
+	"cargo scan power" 1000000000000000
+	"tactical scan power" 1000000000000000
+	"scan interference" 1000000000000000
+	"scan concealment" 1000000000000000
+	"asteroid scan power" 1000000000000000
+	"atmosphere scan" 1000000000000000
+	"outfit scan efficiency" 1000000000000000
+	"outfit scan power" 1000000000000000
+	"radar jamming" 1000000000000000
+	"optical jamming" 1000000000000000
+	"inscrutable" 1
+
+outfit "xyzGaslining"
+	"display name" "gaslining"
+	category "xyz planet/wormhole access"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"gaslining" 1
+
+outfit "xyzCargoGod"
+	"display name" "cargo core"
+	category "xyz bunker/cargo capacity"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"cargo space" 1
+	
+outfit "xyzBunkerGod"
+	"display name" "bunker core"
+	category "xyz bunker/cargo capacity"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"bunks" 1
+
+outfit "xyzCargoGoddamn"
+	"display name" "cargo reducer core"
+	category "xyz bunker/cargo capacity"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"cargo space" -1
+	
+outfit "xyzBunkerGoddamn"
+	"display name" "bunker reducer core"
+	category "xyz bunker/cargo capacity"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"bunks" -1
+
+outfit "xyzOutfitterGod"
+	"display name" "outfit core"
+	category "xyz unli outfitter space"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"outfit space" 1000000000000000
+	"engine capacity" 1000000000000000
+	"weapon capacity" 1000000000000000
+	"drill port" 1000000000000000
+	"drill spar" 1000000000000000
+	"spinal mount" 1000000000000000
+
+outfit "xyzplanHattack"
+	"display name" "xyzattack"
+	category "xyz crews' weapon"
+	thumbnail "outfit/unknown"
+	unplunderable 1
+	"capture attack" 1000000000000000
+
+outfit "xyzplanHdefense"
+	"display name" "xyzdefense"
+	category "xyz crews' weapon"
+	thumbnail "outfit/unknown"
+	unplunderable 1
+	"capture defense" 1000000000000000
+
+outfit "Cloakp"
+	"display name" "stealth 1"
+	category "xyz invisible stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"cloaked communication" 1
+	"cloak phasing" 1
+	"cloaked scanning" 1
+	"cloaked boarding" 1
+	"cloaked firing" -1
+	"cloaked pickup" 1
+	"cloaked deployment" 1
+	"cloak" 1
+	"cloaked regen multiplier" 2
+	"cloaked repair multiplier" 2
+
+outfit "xyzRecoveryGod"
+	"display name" "recovery core"
+	category "xyz Ship Invincible parts"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"disabled recovery fuel" 0.00001
+	"disabled recovery energy" 0.00001
+	"disabled recovery time" 0.1
+
+outfit "xyzWormholePass"
+	"display name" "wormhole core"
+	category "xyz planet/wormhole access"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"quantum keystone" 1
+
+outfit "jumpDDD"
+	"display name" "goddrive"
+	category "xyz Hyperdrive/Jumpdrive stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"jump speed" 100
+	"jump fuel" 1
+	"jump drive" 1
+	"jump range" 10000000
+
+outfit "xyzJumpDrive"
+	"display name" "jumpdrive"
+	category "xyz Hyperdrive/Jumpdrive stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"jump speed" 100
+	"jump fuel" 1
+	"jump drive" 1
+
+outfit "XyzhyperDrive"
+	"display name" "hyperdrive"
+	category "xyz Hyperdrive/Jumpdrive stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"jump speed" 100
+	"jump fuel" 1
+	"hyperdrive" 1
+
+outfit "mapFDFFG"
+	"display name" "reveal all connected map"
+	category "xyz map"
+	thumbnail "outfit/map"
+	"map" 100000000
+	"map minables" 1
+
+outfit "100+ income"
+	category "xyz income generator"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"income" 100000
+	description "Recommended to use if you want to bypass crew salaries."
+
+outfitter "xyz"
+	location
+		attributes "outfitter"
+	"xyzplanHattack"
+	"xyzplanHdefense"
+	"1xyzplanautomaton"
+	"crew pluss"
+	"crew minus"
+	"Cloakp"
+	"jumpDDD"
+	"mapFDFFG"
+	"100+ income"
+	"0xyzplanautomaton"
+	"xyzImmortalz"
+	"xyzScannerGod"
+	"xyzGaslining"
+	"xyzCargoGod"
+	"xyzBunkerGod"
+	"xyzOutfitterGod"
+	"xyzEngineGod"
+	"xyzPowerGod"
+	"xyzMassGod"
+	"xyzMassGoddamn"
+	"XyzhyperDrive"
+	"xyzJumpDrive"
+	"xyzRecoveryGod"
+	"xyzWormholePass"
+	"xyzFuelGod"
+	"xyzfuelcollectorGod"
+	"xyzRegenerationGod"
+	"xyzBunkerGoddamn"
+	"xyzCargoGoddamn"
+	"xyzThrustGod"
+	"xyzThrustGoddamn"
+	"xyzTurnGod"
+	"xyzTurnGoddamn"
+	"xyzDragGod"
+	"xyzDragGoddamn"
+	"xyzKillWeaponGun"
+	"xyzDisableWeaponGun"
+	"xyzThrustGodDecimal"
+	"xyzThrustGoddamnDecimal"
+	"xyzTurnGodDecimal"
+	"xyzTurnGoddamnDecimal"
+	"xyzDragGodDecimal"
+	"xyzDragGoddamnDecimal"
+	"xyzThrustGodDecimall"
+	"xyzThrustGoddamnDecimall"
+	"xyzTurnGodDecimall"
+	"xyzTurnGoddamnDecimall"
+	"xyzDragGodDecimall"
+	"xyzDragGoddamnDecimall"
+	"xyzThrustGodDecimalll"
+	"xyzThrustGoddamnDecimalll"
+	"xyzTurnGodDecimalll"
+	"xyzTurnGoddamnDecimalll"
+	"xyzDragGodDecimalll"
+	"xyzDragGoddamnDecimalll"
+	"xyzThrustGodDecimallll"
+	"xyzThrustGoddamnDecimallll"
+	"xyzTurnGodDecimallll"
+	"xyzTurnGoddamnDecimallll"
+	"xyzDragGodDecimallll"
+	"xyzDragGoddamnDecimallll"
+	"xyzThrustGodDecimalllll"
+	"xyzThrustGoddamnDecimalllll"
+	"xyzTurnGodDecimalllll"
+	"xyzTurnGoddamnDecimalllll"
+	"xyzDragGodDecimalllll"
+	"xyzDragGoddamnDecimalllll"
+	"xyzThrustGodDecimallllll"
+	"xyzThrustGoddamnDecimallllll"
+	"xyzTurnGodDecimallllll"
+	"xyzTurnGoddamnDecimallllll"
+	"xyzDragGodDecimallllll"
+	"xyzDragGoddamnDecimallllll"
+	"xyzThrustGodDecimalllllll"
+	"xyzThrustGoddamnDecimalllllll"
+	"xyzTurnGodDecimalllllll"
+	"xyzTurnGoddamnDecimalllllll"
+	"xyzDragGodDecimalllllll"
+	"xyzDragGoddamnDecimalllllll"
+	"xyzMassGodd"
+	"xyzMassGoddd"
+	"xyzMassGodddd"
+	"xyzMassGoddddd"
+	"xyzMassGodddddd"
+	"xyzMassGoddddddd"
+	"xyzMassGoddamnn"
+	"xyzMassGoddamnnn"
+	"xyzMassGoddamnnnn"
+	"xyzMassGoddamnnnnn"
+	"xyzMassGoddamnnnnnn"

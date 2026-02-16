@@ -1,0 +1,22 @@
+mission "xyzfContact"
+	name "[XYZ] Reveal XYZ homeworld"
+	landing
+	on offer
+		conversation
+			`Either you want to cheat or not, it's up to you.`
+			`	(This choice won't offer again after this conversation.)`
+			label "return"
+			choice
+				`	(Accept to XYZ's offer.)`
+					goto xyzVisit
+				`	(Don't accept to XYZ's offer.)`
+					decline
+
+			label xyzVisit
+			action
+				event "xyzVisitHomeWorld"
+			`	XYZ-1 is revealed. Go to that system and grab my technology if you need it. You must have Mythical Jumpdrive.`
+				decline
+
+event "xyzVisitHomeWorld"
+	visit "XYZ-1"

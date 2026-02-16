@@ -1,0 +1,9 @@
+planet "XYZhome"
+	landscape land/xyzCloud
+	government XYZ
+	spaceport "XYZ."
+	attributes "xyzcheat"
+	shipyard "xyz"
+	outfitter "xyz"
+	"required reputation" -99999999
+	bribe 0.01
