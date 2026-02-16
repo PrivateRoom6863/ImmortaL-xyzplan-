@@ -1,5 +1,5 @@
 name `Xyzplan`
-about `You better not know what does this mod do. Mod was Inspired by RTF cheat.`
+about `You better not know what does this mod do. Mod was Inspired by RTF cheat and omnis.`
 version 1
 authors
   "Xyzplan"
