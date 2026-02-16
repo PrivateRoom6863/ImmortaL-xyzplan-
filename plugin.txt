@@ -1,0 +1,5 @@
+name `Xyzplan`
+about `You better not know what does this mod do. Mod was Inspired by RTF cheat.`
+version 1
+authors
+  "Xyzplan"
