@@ -29,6 +29,10 @@ ship "Xyzplan"
 		xyzfuelcollectorGod
 		xyzplanHattack
 		xyzplanHdefense
+		xyzKillHWeaponTurret
+		xyzDisableHWeaponTurret
+	turret 0 0
+	turret 0 0
 	bay "XYZrobots" 0 0
 	bay "XYZrobots" 0 0
 	bay "XYZrobots" 0 0
@@ -544,6 +548,34 @@ ship "xyzSwordKiller"
 		xyzDragGodDecimalllll 10
 		xyzDragGoddamnDecimalllllll 997
 		xyzImmortalz
+		xyzKillMWeaponGun 2
+		xyzMassGoddddddd
+		xyzOutfitterGod
+		xyzPowerGod
+		xyzRecoveryGod
+		xyzRegenerationGod
+		xyzScannerGod
+		xyzThrustGodDecimallllll 5
+		xyzTurnGodDecimalllll 3
+	gun -20 -30.5
+	engine -15.5 29
+	gun 20 -30.5
+	engine 15.5 29
+
+ship "xyzGunKiller"
+	"display name" "Killer"
+	"never disabled"
+	uncapturable
+	sprite "ship/xyzKiller"
+	attributes
+		category XYZrobots
+		cost 0
+	outfits
+		1xyzplanautomaton
+		Cloakp
+		xyzDragGodDecimalllll 10
+		xyzDragGoddamnDecimalllllll 997
+		xyzImmortalz
 		xyzKillWeaponGun 2
 		xyzMassGoddddddd
 		xyzOutfitterGod
@@ -559,6 +591,34 @@ ship "xyzSwordKiller"
 	engine 15.5 29
 
 ship "xyzSwordDisabler"
+	"display name" "Disabler"
+	"never disabled"
+	uncapturable
+	sprite "ship/xyzDisabler"
+	attributes
+		category XYZrobots
+		cost 0
+	outfits
+		1xyzplanautomaton
+		Cloakp
+		xyzDragGodDecimalllll 10
+		xyzDragGoddamnDecimalllllll 997
+		xyzImmortalz
+		xyzDisableMWeaponGun 2
+		xyzMassGoddddddd
+		xyzOutfitterGod
+		xyzPowerGod
+		xyzRecoveryGod
+		xyzRegenerationGod
+		xyzScannerGod
+		xyzThrustGodDecimallllll 5
+		xyzTurnGodDecimalllll 3
+	gun -20 -30.5
+	engine -15.5 29
+	gun 20 -30.5
+	engine 15.5 29
+
+ship "xyzGunDisabler"
 	"display name" "Disabler"
 	"never disabled"
 	uncapturable
@@ -592,3 +652,5 @@ shipyard "xyz"
 	"Xyzplan"
 	"xyzSwordKiller"
 	"xyzSwordDisabler"
+	"xyzGunDisabler"
+	"xyzGunKiller"

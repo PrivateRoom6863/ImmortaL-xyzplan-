@@ -48,10 +48,13 @@ outfit "xyzImmortalz"
 	category "xyz Ship Invincible parts"
 	thumbnail "outfit/unknown"
 	"unplunderable" 1
+	"corrosion protection" 1000000000000000
 	"corrosion resistance" 1000000000000000
 	"disruption protection" 1000000000000000
 	"disruption resistance" 1000000000000000
 	"heat protection" 1000000000000000
+	"burn protection" 1000000000000000
+	"burn resistance" 1000000000000000
 	hull 1000000000000000
 	"hull heat" -1000000000000000
 	"hull energy" 1000000000000000
@@ -70,6 +73,10 @@ outfit "xyzImmortalz"
 	"slowing protection" 1000000000000000
 	"slowing resistance" 1000000000000000
 	"force protection" 1000000000000000
+	"leak protection" 1000000000000000
+	"leak resistance" 1000000000000000
+	"discharge protection" 1000000000000000
+	"discharge resistance" 1000000000000000
 
 outfit "xyzRegenerationGod"
 	"display name" "healer core"
@@ -115,9 +122,8 @@ outfit "xyzKillWeaponGun"
 		"velocity" 28
 		"lifetime" 1
 		"reload" 1
-		"burst reload" 1
-		"burst count" 5
 		"submunition" "xyzKillWeaponAmmo"
+		phasing
 
 outfit "xyzKillWeaponAmmo"
 	weapon
@@ -125,16 +131,184 @@ outfit "xyzKillWeaponAmmo"
 			"frame rate" 7
 			"random start frame"
 		"lifetime" 100
-		"hit force" 10
-		"piercing" 2000
+		"hit force" 1000000
+		"piercing" 1000000
+		"heat damage" 1000000000000000
+		"relative heat damage" 1000000000000000
 		"shield damage" 1000000000000000
 		"relative shield damage" 1000000000000000
 		"hull damage" 1000000000000000
 		"relative hull damage" 1000000000000000
-		"heat damage" 1000000000000000
+		"fuel damage" 1000000000000000
+		"relative fuel damage" 1000000000000000
+		"energy damage" 1000000000000000
+		"relative energy damage" 1000000000000000
 		"slowing damage" 1000000000000000
-		safe
+		"minable damage" 1000000000000000
+		"relative minable damage" 1000000000000000
+
+outfit "xyzKillMWeaponGun"
+	"display name" "SlayeR Melee Gun"
+	category "xyz Ship Gun/Turret stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"gun ports" -1
+	weapon
+		"hardpoint sprite" "hardpoint/xyzGT"
+		"hardpoint offset" 10.
+		sound "xyzBulletZ"
+		"turret turn" 0
+		"velocity" 28
+		"lifetime" 1
+		"reload" 1
+		"submunition" "xyzKillWeaponMelee"
 		phasing
+
+outfit "xyzKillWeaponMelee"
+	weapon
+		sprite "projectile/xyzBullet"
+			"frame rate" 7
+			"random start frame"
+		"lifetime" 1
+		"hit force" 1000000
+		"piercing" 1000000
+		"heat damage" 1000000000000000
+		"relative heat damage" 1000000000000000
+		"relative heat damage" 1000000000000000
+		"shield damage" 1000000000000000
+		"relative shield damage" 1000000000000000
+		"hull damage" 1000000000000000
+		"relative hull damage" 1000000000000000
+		"fuel damage" 1000000000000000
+		"relative fuel damage" 1000000000000000
+		"energy damage" 1000000000000000
+		"relative energy damage" 1000000000000000
+		"slowing damage" 1000000000000000
+		"minable damage" 1000000000000000
+		"relative minable damage" 1000000000000000
+
+outfit "xyzKillHWeaponTurret"
+	"display name" "SlayeR Hive Turret"
+	category "xyz Ship Gun/Turret stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turret mounts" -1
+	weapon
+		icon "icon/KillerH"
+		"hardpoint sprite" "hardpoint/xyzGT"
+		"hardpoint offset" 10.
+		sound "xyzBulletZ"
+		"turret turn" 20
+		"reload" 1
+		"lifetime" 1
+		"velocity" 999999
+		"submunition" "xyzKillHWeaponAmmo"
+		phasing
+
+outfit "xyzKillHWeaponAmmo"
+	weapon
+		sprite "projectile/xyzBullet"
+			"frame rate" 7
+			"random start frame"
+		"lifetime" 1
+		"hit force" 1000000
+		"piercing" 1000000
+		"heat damage" 1000000000000000
+		"relative heat damage" 1000000000000000
+		"shield damage" 1000000000000000
+		"relative shield damage" 1000000000000000
+		"hull damage" 1000000000000000
+		"relative hull damage" 1000000000000000
+		"fuel damage" 1000000000000000
+		"relative fuel damage" 1000000000000000
+		"energy damage" 1000000000000000
+		"relative energy damage" 1000000000000000
+		"slowing damage" 1000000000000000
+		"minable damage" 1000000000000000
+		"relative minable damage" 1000000000000000
+
+outfit "xyzDisableHWeaponTurret"
+	"display name" "DisableR Hive Turret"
+	category "xyz Ship Gun/Turret stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"turret mounts" -1
+	weapon
+		icon "icon/DisablerH"
+		"hardpoint sprite" "hardpoint/xyzGT"
+		"hardpoint offset" 10.
+		sound "xyzBulletZ"
+		"turret turn" 20
+		"reload" 1
+		"lifetime" 1
+		"velocity" 999999
+		"submunition" "xyzDisableHWeaponAmmo"
+		phasing
+
+outfit "xyzDisableHWeaponAmmo"
+	weapon
+		sprite "projectile/xyzBullet"
+			"frame rate" 7
+			"random start frame"
+		"lifetime" 1
+		"hit force" 1
+		"piercing" 1000000
+		"heat damage" 1000000000000000
+		"relative heat damage" 1000000000000000
+		"shield damage" 1000000000000000
+		"relative shield damage" 1000000000000000
+		"hull damage" 1000000000000000
+		"relative hull damage" 1000000000000000
+		"fuel damage" 1000000000000000
+		"relative fuel damage" 1000000000000000
+		"energy damage" 1000000000000000
+		"relative energy damage" 1000000000000000
+		"slowing damage" 1000000000000000
+		"minable damage" 1000000000000000
+		"relative minable damage" 1000000000000000
+		"disabled damage" 0
+		"relative disabled damage" 0
+
+outfit "xyzDisableMWeaponGun"
+	"display name" "DisableR Melee Gun"
+	category "xyz Ship Gun/Turret stuff"
+	thumbnail "outfit/unknown"
+	"unplunderable" 1
+	"gun ports" -1
+	weapon
+		"hardpoint sprite" "hardpoint/xyzGT"
+		"hardpoint offset" 10.
+		sound "xyzBulletZ"
+		"turret turn" 0
+		"velocity" 28
+		"lifetime" 1
+		"reload" 1
+		"submunition" "xyzDisableWeaponMelee"
+		phasing
+
+outfit "xyzDisableWeaponMelee"
+	weapon
+		sprite "projectile/xyzBullet"
+			"frame rate" 7
+			"random start frame"
+		"lifetime" 1
+		"hit force" 1
+		"piercing" 1000000
+		"heat damage" 1000000000000000
+		"relative heat damage" 1000000000000000
+		"shield damage" 1000000000000000
+		"relative shield damage" 1000000000000000
+		"hull damage" 1000000000000000
+		"relative hull damage" 1000000000000000
+		"fuel damage" 1000000000000000
+		"relative fuel damage" 1000000000000000
+		"energy damage" 1000000000000000
+		"relative energy damage" 1000000000000000
+		"slowing damage" 1000000000000000
+		"minable damage" 1000000000000000
+		"relative minable damage" 1000000000000000
+		"disabled damage" 0
+		"relative disabled damage" 0
 
 outfit "xyzDisableWeaponGun"
 	"display name" "DisableR Gun"
@@ -150,9 +324,8 @@ outfit "xyzDisableWeaponGun"
 		"velocity" 28
 		"lifetime" 1
 		"reload" 1
-		"burst reload" 1
-		"burst count" 5
 		"submunition" "xyzDisableWeaponAmmo"
+		phasing
 
 outfit "xyzDisableWeaponAmmo"
 	weapon
@@ -160,15 +333,23 @@ outfit "xyzDisableWeaponAmmo"
 			"frame rate" 7
 			"random start frame"
 		"lifetime" 100
-		"hit force" 10
-		"piercing" 2000
+		"hit force" 1
+		"piercing" 1000000
+		"heat damage" 1000000000000000
+		"relative heat damage" 1000000000000000
+		"shield damage" 1000000000000000
+		"relative shield damage" 1000000000000000
 		"hull damage" 1000000000000000
-		"relative hull damage" 1
-		"slowing damage" 100000
+		"relative hull damage" 1000000000000000
+		"fuel damage" 1000000000000000
+		"relative fuel damage" 1000000000000000
+		"energy damage" 1000000000000000
+		"relative energy damage" 1000000000000000
+		"slowing damage" 1000000000000000
+		"minable damage" 1000000000000000
+		"relative minable damage" 1000000000000000
 		"disabled damage" 0
 		"relative disabled damage" 0
-		safe
-		phasing
 
 outfit "xyzMassGod"
 	"display name" "mass 10000 core"
@@ -645,6 +826,7 @@ outfit "xyzScannerGod"
 	"atmosphere scan" 1000000000000000
 	"outfit scan efficiency" 1000000000000000
 	"outfit scan power" 1000000000000000
+	"outfit scan opacity" 1000000000000000
 	"radar jamming" 1000000000000000
 	"optical jamming" 1000000000000000
 	"inscrutable" 1
@@ -747,7 +929,7 @@ outfit "jumpDDD"
 	category "xyz Hyperdrive/Jumpdrive stuff"
 	thumbnail "outfit/unknown"
 	"unplunderable" 1
-	"jump speed" 100
+	"jump speed" .3
 	"jump fuel" 1
 	"jump drive" 1
 	"jump range" 10000000
@@ -757,7 +939,7 @@ outfit "xyzJumpDrive"
 	category "xyz Hyperdrive/Jumpdrive stuff"
 	thumbnail "outfit/unknown"
 	"unplunderable" 1
-	"jump speed" 100
+	"jump speed" .3
 	"jump fuel" 1
 	"jump drive" 1
 
@@ -766,7 +948,7 @@ outfit "XyzhyperDrive"
 	category "xyz Hyperdrive/Jumpdrive stuff"
 	thumbnail "outfit/unknown"
 	"unplunderable" 1
-	"jump speed" 100
+	"jump speed" .3
 	"jump fuel" 1
 	"hyperdrive" 1
 
@@ -877,3 +1059,7 @@ outfitter "xyz"
 	"xyzMassGoddamnnnn"
 	"xyzMassGoddamnnnnn"
 	"xyzMassGoddamnnnnnn"
+	"xyzKillMWeaponGun"
+	"xyzDisableMWeaponGun"
+	"xyzKillHWeaponTurret"
+	"xyzDisableHWeaponTurret"

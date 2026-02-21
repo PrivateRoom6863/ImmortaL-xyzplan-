@@ -8,24 +8,28 @@ mission "xyz fleet escort"
 		conversation
 			`	Pick any of this fleet or ship to add to your escort.`
 			
-			label xyz
+			label xyzZ
 			choice
 				`	(Give me an xyzship.)`
-					goto xyzship
-				`	(Give me a Killer Drone.)`
-					goto xyzkillerdrone
-				`	(Give me a Disabler Drone.)`
-					goto xyzdisablerdrone
+					goto xyzshipZ
+				`	(Give me a Sword Killer Drone.)`
+					goto xyzswordkillerdroneZ
+				`	(Give me a Sword Disabler Drone.)`
+					goto xyzsworddisablerdroneZ
+				`	(Give me a Gun Killer Drone.)`
+					goto xyzgunkillerdroneZ
+				`	(Give me a Gun Disabler Drone.)`
+					goto xyzgundisablerdroneZ
 				`	(Done.)`
-					goto end
+					goto endZ
 			
-			label "xyzship"
+			label "xyzshipZ"
 			action
 				give ship "Xyzplan" "XYZ"
 			`	Your ship have been assembled.`
-				goto xyz
+				goto xyzZ
 			
-			label "xyzkillerdrone"
+			label "xyzswordkillerdroneZ"
 			action
 				give ship "xyzSwordKiller" "Killer"
 				give ship "xyzSwordKiller" "Killer"
@@ -37,10 +41,10 @@ mission "xyz fleet escort"
 				give ship "xyzSwordKiller" "Killer"
 				give ship "xyzSwordKiller" "Killer"
 				give ship "xyzSwordKiller" "Killer"
-			`	Your killer drone have been assembled.`
-				goto xyz
+			`	Your killer Sword drone have been assembled.`
+				goto xyzZ
 			
-			label "xyzdisablerdrone"
+			label "xyzsworddisablerdroneZ"
 			action
 				give ship "xyzSwordDisabler" "Disabler"
 				give ship "xyzSwordDisabler" "Disabler"
@@ -52,9 +56,39 @@ mission "xyz fleet escort"
 				give ship "xyzSwordDisabler" "Disabler"
 				give ship "xyzSwordDisabler" "Disabler"
 				give ship "xyzSwordDisabler" "Disabler"
-			`	Your disabler drone have been assembled.`
-				goto xyz
+			`	Your disabler Sword drone have been assembled.`
+				goto xyzZ
 			
-			label end
+			label "xyzgunkillerdroneZ"
+			action
+				give ship "xyzGunKiller" "Killer"
+				give ship "xyzGunKiller" "Killer"
+				give ship "xyzGunKiller" "Killer"
+				give ship "xyzGunKiller" "Killer"
+				give ship "xyzGunKiller" "Killer"
+				give ship "xyzGunKiller" "Killer"
+				give ship "xyzGunKiller" "Killer"
+				give ship "xyzGunKiller" "Killer"
+				give ship "xyzGunKiller" "Killer"
+				give ship "xyzGunKiller" "Killer"
+			`	Your killer Gun drone have been assembled.`
+				goto xyzZ
+			
+			label "xyzgundisablerdroneZ"
+			action
+				give ship "xyzGunDisabler" "Disabler"
+				give ship "xyzGunDisabler" "Disabler"
+				give ship "xyzGunDisabler" "Disabler"
+				give ship "xyzGunDisabler" "Disabler"
+				give ship "xyzGunDisabler" "Disabler"
+				give ship "xyzGunDisabler" "Disabler"
+				give ship "xyzGunDisabler" "Disabler"
+				give ship "xyzGunDisabler" "Disabler"
+				give ship "xyzGunDisabler" "Disabler"
+				give ship "xyzGunDisabler" "Disabler"
+			`	Your disabler Gun drone have been assembled.`
+				goto xyzZ
+			
+			label endZ
 			`	Come back later if you need it.`
 				decline
