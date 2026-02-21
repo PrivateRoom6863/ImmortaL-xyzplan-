@@ -5,3 +5,7 @@ Note that:
 Ruinous executor ship was from SRPG-4 while the rest like outfits, turrets, and sounds are from vanilla or might be from other sources. So, instead, all rightful assets goes to the respective owner.
 
 If you think that there's something wrong or want to suggest about the mod, ping me at endless sky discord #plugin-chat or dm me .xyzplan.
+
+Thanks:
+Endless sky
+Srpg-4
