@@ -56,7 +56,6 @@ outfit "xyzImmortalz"
 	"burn protection" 1000000000000000
 	"burn resistance" 1000000000000000
 	hull 1000000000000000
-	"hull heat" -1000000000000000
 	"hull energy" 1000000000000000
 	"hull protection" 1000000000000000
 	"ion protection" 1000000000000000
@@ -67,9 +66,6 @@ outfit "xyzImmortalz"
 	"scramble resistance" 1000000000000000
 	"shield energy" 1000000000000000
 	shields 1000000000000000
-	"shield heat" -1000000000000000
-	"shield heat multiplier" -1000000000000000
-	"hull heat multiplier" -1000000000000000
 	"slowing protection" 1000000000000000
 	"slowing resistance" 1000000000000000
 	"force protection" 1000000000000000
